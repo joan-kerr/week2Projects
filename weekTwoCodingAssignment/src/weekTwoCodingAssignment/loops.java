@@ -11,7 +11,7 @@ public class loops {
 		 i++; 
 	  } 
 //A while loop that prints every 3rd number backwards from 100 to 0
-	int x = 0; 
+	int x = 100; 
 	while ( x < 101 && x > 0) {
 		System.out.println( x );
 		x -= 3;
@@ -20,14 +20,12 @@ public class loops {
 	for (int y = 1; y <= 100; y += 2) {
 		System.out.println(y);
 		}
-//A for loop, prints 0 -100, Hello, World, and Hello World
-	for (int z = 0; z <= 100; z++) {
-			System.out.println(z);
-		if (z % 3 == 0 && z % 5 != 0); 
-			System.out.println("Hello" -= z);  
-		if (z % 5 == 0 && z % 3 != 0); 
-			System.out.println("!z" + "World"); 
-		if (z % 3 == 0 && z % 5 == 0) {
-			System.out.println("!z" + "Hello World");
-	}
-	}}}    
+//A for loop, prints 0 - 100, Hello, World, and Hello World
+		for (int z = 0; z <= 100; z++) {
+			if (z % 3 == 0 && z % 5 != 0) System.out.println("Hello ");
+			if (z % 5 == 0 && z % 3 != 0) System.out.println("World ");
+			if (z % 5 == 0 && z % 3 == 0) System.out.println("Hello World! ");
+			if (z % 5 != 0 && z % 3 != 0) System.out.println(z);
+	    }
+      }
+    }
